@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gurugram Real Estate Private Limited - Premium real estate services in Gurugram, Haryana.">
+<title>Gurugram Real Estate Private Limited</title>
+<style>
+:root{
+  --bg:#07100f;
+  --panel:#0d1917;
+  --gold:#d8b46a;
+  --gold2:#f2d58d;
+  --text:#f7f3e8;
+  --muted:#b9b6aa;
+  --line:rgba(216,180,106,.24);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  background:var(--bg); color:var(--text); line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:20;
+  padding:18px 6%;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(7,16,15,.78);backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(255,255,255,.06)
+}
+.logo{font-size:18px;letter-spacing:2px;font-weight:bold}
+.logo span{color:var(--gold)}
+.navlinks{display:flex;gap:25px;font-family:Arial,sans-serif;font-size:13px}
+.navlinks a:hover{color:var(--gold)}
+.hero{
+  min-height:100vh;display:grid;place-items:center;text-align:center;
+  padding:130px 6% 80px;position:relative;overflow:hidden;
+  background:
+   linear-gradient(rgba(3,10,9,.63),rgba(3,10,9,.92)),
+   url("photo1.jpeg") center/cover no-repeat;
+}
+.hero:after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 50% 35%,rgba(216,180,106,.14),transparent 45%);
+  pointer-events:none;
+}
+.hero-content{position:relative;z-index:2;max-width:900px}
+.kicker{font:600 12px Arial,sans-serif;letter-spacing:5px;color:var(--gold2);text-transform:uppercase}
+h1{font-size:clamp(44px,7vw,86px);line-height:1.02;margin:20px 0}
+.hero p{max-width:700px;margin:0 auto;color:#ddd9cc;font:16px/1.8 Arial,sans-serif}
+.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:34px}
+.btn{
+  padding:14px 20px;border:1px solid var(--line);border-radius:999px;
+  font:600 13px Arial,sans-serif;letter-spacing:.5px;transition:.25s;
+  background:rgba(255,255,255,.04)
+}
+.btn.primary{background:var(--gold);color:#111;border-color:var(--gold)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.3)}
+section{padding:100px 6%}
+.section-head{max-width:700px;margin-bottom:42px}
+.eyebrow{font:600 11px Arial,sans-serif;letter-spacing:4px;color:var(--gold);text-transform:uppercase}
+h2{font-size:clamp(34px,5vw,56px);line-height:1.1;margin-top:12px}
+.section-head p{font:15px/1.8 Arial,sans-serif;color:var(--muted);margin-top:15px}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:260px 260px;gap:14px}
+.gallery img{width:100%;height:100%;object-fit:cover;border-radius:4px;border:1px solid rgba(255,255,255,.07);filter:saturate(.88)}
+.gallery img:first-child{grid-row:span 2}
+.info{background:linear-gradient(135deg,#0d1917,#07100f);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:28px;border:1px solid var(--line);background:rgba(255,255,255,.025);min-height:180px}
+.card h3{font-size:21px;margin-bottom:10px;color:var(--gold2)}
+.card p{font:14px/1.75 Arial,sans-serif;color:var(--muted)}
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:stretch}
+.contact-card{padding:38px;border:1px solid var(--line);background:var(--panel)}
+.contact-row{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.contact-row:last-child{border-bottom:0}
+.contact-row small{display:block;color:var(--gold);font:10px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px}
+.contact-row span,.contact-row a{font:15px/1.6 Arial,sans-serif;color:#e7e4da}
+.map{min-height:100%;border:1px solid var(--line);overflow:hidden}
+.map iframe{width:100%;height:100%;min-height:390px;border:0}
+footer{padding:30px 6%;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#8f8c82;font:12px Arial,sans-serif}
+@media(max-width:800px){
+ .navlinks{display:none}
+ .gallery{grid-template-columns:1fr 1fr;grid-template-rows:260px 180px 180px}
+ .gallery img:first-child{grid-column:span 2;grid-row:auto}
+ .cards,.contact-wrap{grid-template-columns:1fr}
+ section{padding:75px 5%}
+ .hero{padding-left:5%;padding-right:5%}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">GURUGRAM <span>REAL ESTATE</span></div>
+  <div class="navlinks">
+    <a href="#about">About</a>
+    <a href="#properties">Properties</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="kicker">Private Real Estate Company · Gurugram</div>
+    <h1>Gurugram Real Estate<br><span style="color:var(--gold)">Private Limited</span></h1>
+    <p>Premium real estate opportunities, professional guidance and a refined property experience in Gurugram, Haryana.</p>
+    <div class="actions">
+      <a class="btn primary" href="tel:+919910498765">☎ Call Now</a>
+      <a class="btn" href="https://wa.me/919910498765" target="_blank">◉ WhatsApp</a>
+      <a class="btn" href="https://www.google.com/maps?q=28.383700,77.059017" target="_blank">⌖ Google Maps</a>
+      <a class="btn" href="https://youtube.com/@gurugramestatepvtltd?si=HRO9UepVv_uDdYB8" target="_blank">▶ YouTube</a>
+      <a class="btn" href="https://www.instagram.com/gurugramestate?stkn=d3dyZHYzOTR0YzBp" target="_blank">◎ Instagram</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="section-head">
+    <div class="eyebrow">About the Company</div>
+    <h2>A more refined way to discover real estate.</h2>
+    <p>Gurugram Real Estate Private Limited is presented as a premium real estate brand focused on property opportunities and client-focused service in Gurugram.</p>
+  </div>
+  <div class="cards">
+    <div class="card"><h3>Premium Approach</h3><p>A sophisticated presentation designed for buyers, investors and property clients looking for a professional experience.</p></div>
+    <div class="card"><h3>Gurugram Focus</h3><p>Serving clients around Gurugram with a local-first approach and convenient direct communication.</p></div>
+    <div class="card"><h3>Direct Connect</h3><p>Reach the company quickly through dedicated call, WhatsApp, social media and location buttons.</p></div>
+  </div>
+</section>
+
+<section id="properties" class="info">
+  <div class="section-head">
+    <div class="eyebrow">Property Showcase</div>
+    <h2>Spaces worth discovering.</h2>
+    <p>Replace the five placeholder JPEGs below with your own property photographs. Keep the filenames exactly as shown.</p>
+  </div>
+  <div class="gallery">
+    <img src="photo1.jpeg" alt="Property showcase 1">
+    <img src="photo2.jpeg" alt="Property showcase 2">
+    <img src="photo3.jpeg" alt="Property showcase 3">
+    <img src="photo4.jpeg" alt="Property showcase 4">
+    <img src="photo5.jpeg" alt="Property showcase 5">
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-head">
+    <div class="eyebrow">Get in Touch</div>
+    <h2>Let's discuss your next property move.</h2>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-card">
+      <div class="contact-row"><small>Mobile</small><a href="tel:+919910498765">+91 99104 98765</a></div>
+      <div class="contact-row"><small>Address</small><span>C1049 Ansal Esencia 4, Sushant Lok Phase 1, Sector 67, Gurugram, Haryana 122101</span></div>
+      <div class="contact-row"><small>Coordinates</small><a href="https://www.google.com/maps?q=28.383700,77.059017" target="_blank">28.383700, 77.059017 · Open in Maps</a></div>
+      <div class="actions" style="justify-content:flex-start">
+        <a class="btn primary" href="tel:+919910498765">Call</a>
+        <a class="btn" href="https://wa.me/919910498765" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+    <div class="map">
+      <iframe loading="lazy" src="https://www.google.com/maps?q=28.383700,77.059017&z=16&output=embed" title="Gurugram Real Estate location"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 Gurugram Real Estate Private Limited</div>
+  <div>Gurugram · Haryana · India</div>
+</footer>
+
+</body>
+</html>
